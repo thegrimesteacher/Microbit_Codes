@@ -1,12 +1,9 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showLeds(`
-        . # # # .
-        # . . . .
-        . # # # .
-        . . . . #
-        . # # # .
-        `)
+    basic.showIcon(IconNames.Heart)
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showString("Wazzup!")
+    basic.showIcon(IconNames.Sad)
+})
+input.onPinPressed(TouchPin.P1, function () {
+    basic.showIcon(IconNames.Duck)
 })
